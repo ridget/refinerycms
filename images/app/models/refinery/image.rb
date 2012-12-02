@@ -13,9 +13,6 @@ module Refinery
     validates_property :mime_type, :of => :image, :in => ::Refinery::Images.whitelisted_mime_types,
                        :message => :incorrect_format
 
-    # Docs for acts_as_indexed http://github.com/dougal/acts_as_indexed
-    acts_as_indexed :fields => [:title]
-
     # allows Mass-Assignment
     attr_accessible :id, :image, :image_size
 

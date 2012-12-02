@@ -16,4 +16,5 @@ Gem::Specification.new do |s|
 
   # Development dependencies (usually used for testing)
   s.add_development_dependency 'refinerycms-testing',  '~> <%= Refinery::Version %>'
+
 end
